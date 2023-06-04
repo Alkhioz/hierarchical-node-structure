@@ -4,7 +4,9 @@
   "description": "The HierarchyNode class represents a node in a hierarchical data structure. Each node can have child nodes and a reference to its parent node. The class provides methods to manipulate and traverse the hierarchy, such as adding nodes, finding nodes by their identifiers, removing nodes, and executing custom functions on nodes.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "tsc"
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,9 @@
   },
   "homepage": "https://github.com/Alkhioz/hierarchical-node-structure#readme",
   "devDependencies": {
+    "prettier": "^2.8.8",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^5.1.3"
   }
 }
