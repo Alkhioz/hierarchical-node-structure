@@ -1,0 +1,20 @@
+{
+  "name": "hierarchical-node-structure",
+  "version": "1.0.0",
+  "description": "The HierarchyNode class represents a node in a hierarchical data structure. Each node can have child nodes and a reference to its parent node. The class provides methods to manipulate and traverse the hierarchy, such as adding nodes, finding nodes by their identifiers, removing nodes, and executing custom functions on nodes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alkhioz/hierarchical-node-structure.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alkhioz/hierarchical-node-structure/issues"
+  },
+  "homepage": "https://github.com/Alkhioz/hierarchical-node-structure#readme"
+}
