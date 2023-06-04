@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/Alkhioz/hierarchical-node-structure.git"
   },
+  "files": ["lib/**/*"],
   "keywords": [],
   "author": "",
   "license": "ISC",
