@@ -2,11 +2,18 @@
   "name": "hierarchical-node-structure",
   "version": "1.0.0",
   "description": "The HierarchyNode class represents a node in a hierarchical data structure. Each node can have child nodes and a reference to its parent node. The class provides methods to manipulate and traverse the hierarchy, such as adding nodes, finding nodes by their identifiers, removing nodes, and executing custom functions on nodes.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -15,8 +22,8 @@
   "files": [
     "lib/**/*"
   ],
-  "keywords": [],
-  "author": "",
+  "keywords": ["Hierarchy", "Node"],
+  "author": "alkhioz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Alkhioz/hierarchical-node-structure/issues"
