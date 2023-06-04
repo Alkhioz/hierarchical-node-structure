@@ -1,6 +1,6 @@
 {
   "name": "hierarchical-node-structure",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The HierarchyNode class represents a node in a hierarchical data structure. Each node can have child nodes and a reference to its parent node. The class provides methods to manipulate and traverse the hierarchy, such as adding nodes, finding nodes by their identifiers, removing nodes, and executing custom functions on nodes.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
